@@ -1,5 +1,3 @@
-
-
 // Global Constants
 
 const WAGE_PER_HOUR = 20;
@@ -11,8 +9,6 @@ const MAX_WORKING_HOURS_PER_MONTH = 50;
 // Local Vars
 var employeeWageForTheMonth = 0;
 var dailyEmployeeLog = [];                      // should contain {day, attendance, workedHours, wage} ojects
-
-
 
 for (let days = 0; days < WORKING_DAYS_IN_A_MONTH; days++) {
     let currentDayLog;
@@ -39,11 +35,10 @@ for (let days = 0; days < WORKING_DAYS_IN_A_MONTH; days++) {
 }
 logTotal = {"day" : 0, "attendance": true, "workedHours" : getWorkHours(), "wage" : getTotalWage()};
 dailyEmployeeLog.push(logTotal);
-//console.log('Employee Worked for a total of ',getWorkHours(),' hours this month.');
-//console.log('Total Employee Wage for the month is: Rs.',  ,'.');
 
 displayEmployeeLog();
-//console.log(dailyEmployeeLog);
+
+//Functions
 
 function getWorkHours(){
     let hoursWorkedTillNow = 0;
